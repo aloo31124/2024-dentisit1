@@ -1,0 +1,302 @@
+
+/* =========================== 共用設定 start =========================== */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Doppio+One&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap'); */
+/* font-family: 'Nunito', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/* font-family: "Poppins", sans-serif; */
+
+
+:root {
+    --blue-dark: #33A4BA;
+    --blue-light: #4DBCCD;
+    --gray-dark: #54595F;
+    --gray-light: #f5f5f5;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Nunito', sans-serif; => 移除初始文字 */
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none; 
+    border: none;
+    
+}
+
+
+/* 導覽列 start */
+nav {
+    position: fixed;
+    width: 100vw;
+    color: var(--blue-dark);
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+    border-bottom: 1px solid var(--blue-light);
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1000px;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.8rem;
+}
+
+nav a {
+    color: var(--blue-dark);
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 1rem;
+    transition: 1s;
+}
+
+nav a:hover {
+    background: var(--blue-dark);
+    color: white;
+}
+/* 導覽列 end */
+
+
+
+/* 開頭橫幅 start */
+.banner h1 {
+    font-size: 4.5rem;
+    color: white;
+    padding: 10rem;
+    font-weight: 200;
+}
+
+.banner {
+    width: 100vw;
+    height: 95vh;
+    background:url(./img/banner.png) no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+/* 開頭橫幅 end */
+
+
+/* 特色介紹 feature intro start */
+.feature-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;    
+}
+
+.feature-intro h2 {
+    color: var(--blue-dark);
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding: 2rem;
+}
+
+.feature-intro p {
+    color: var(--gray-dark);
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+.feature-intro .feature-row {
+    display: flex;
+    flex-direction: row;
+    padding: 5rem 0;
+}
+
+.feature-intro .feature-row .img-col {
+    padding: 0 4rem;
+    max-width: 400px;
+}
+
+.feature-intro .feature-row .feature-col {
+    display: flex;
+    flex-direction: column;
+    max-width: 18rem;
+    align-items: center;
+    justify-content: space-between;
+}
+/* 特色介紹 feature intro end */
+
+
+
+/* 最新消息 start */
+.news-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: var(--gray-light);
+    padding: 5rem 0;
+}
+.news-section  .news-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 0;
+}
+.news-section  .news-row .new-col {
+    width: 30%;
+    max-width: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem;
+    background: white;
+}
+.news-section  .news-row .new-col img{
+    width: 100%;
+    height: 14rem;
+}
+.news-section  .news-row .new-col .btn {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    font-size: 1rem;
+}
+
+.news-section  .news-row .new-col .text-box {
+    padding: 2rem 1rem;
+    height: 8rem;
+}
+
+.news-section  .news-row .new-col .text-box h3 {
+    color: var(--gray-dark);
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.news-section .news-row .new-col .text-box p {
+    color: var(--gray-dark);
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+.news-section .btn {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    background: var(--blue-dark);
+    color: white;
+    border: 2px solid var(--blue-dark);
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    transition: 1s;
+}
+
+.news-section .btn:hover {
+    background: white;
+    color: var(--blue-dark);
+}
+/* 最新消息 end */
+
+
+
+/* 服務項目 start */
+.service-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: var(--blue-light);
+    padding: 5rem 0;
+    color: white;
+}
+.service-section .service-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    background: var(--blue-dark);
+    padding: 5rem;
+    border-radius: 2rem;
+    margin: 2rem auto;
+}
+.service-section .service-row .service-col-text {
+    width: 35%;
+}
+.service-section .service-row .service-col-icon-box {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.service-section .service-row .service-col-icon-box .icon-item {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.service-section .service-row .service-col-icon-box .icon-item .icon-text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 1rem 0;
+}
+/* 服務項目 end */
+
+
+/* RWD 手機, 行動裝置 */
+@media (max-width: 1000px) {
+
+    /* 開頭橫幅 start */
+    .banner h1 {
+        font-size: 2.5rem;
+        padding: 0;
+    }
+
+    /* 特色介紹 feature intro start */
+    .feature-intro .feature-row {
+        flex-direction: column;
+    }
+    .feature-intro .feature-row .img-col {
+        display: none;
+    }
+
+    .feature-intro .feature-row .feature-col .feature-item {
+        padding: 2rem 0;
+    }
+
+
+    /* 最新消息 start */
+    .news-section  .news-row {
+        flex-direction: column;
+    }
+    .news-section  .news-row .new-col {
+        width: 100%;
+    }
+
+    /* 服務項目 start */
+    .service-section .service-row {
+        flex-direction: column;
+    }
+    .service-section .service-row .service-col-icon-box {
+        width: 80%;
+        flex-direction: column;
+    }
+
+}
+
